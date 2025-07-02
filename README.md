@@ -1,4 +1,4 @@
-# 🪨 Petroglyph Segmentation using YOLOv5
+# 🪨 Petroglyph Segmentation using YOLOv5 and OpenCV
 
 This project focuses on segmenting petroglyphs (ancient rock carvings) using the YOLOv5 object detection model. The model is fine-tuned on a custom dataset to detect petroglyph regions in images.
 
@@ -19,17 +19,4 @@ python train.py \
   --weights {Path_to_model.pt} \
   --data {Path_to_data.yaml} \
   --cache
-```
-
-## 🧠 Model Setup in `main.py`
-Initialize the YOLOv5 model in `main.py` with your model's path
-```
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='model/last.pt')
-```
-
-## 📸 Choosing an Image for Clustering
-Choose a path of image for clustering
-```
-img_path = "./input/" + images[1]
-image = cv2.imread(img_path)
 ```
