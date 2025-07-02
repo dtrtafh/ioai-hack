@@ -27,7 +27,7 @@ Initialize the YOLOv5 model in `main.py` with your model's path
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='model/last.pt')
 ```
 
-### 📸 Choosing an Image for Clustering
+## 📸 Choosing an Image for Clustering
 Choose a path of image for clustering
 ```
 img_path = "./input/" + images[1]
